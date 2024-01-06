@@ -1,3 +1,5 @@
+
+<img width="817" alt="Screenshot 2024-01-06 at 6 19 54 PM" src="https://github.com/Rupali-app-hub/drawapplication/assets/152596991/585165fc-1333-4f50-bba1-0fe57c3e8b57">
 Objective →
 This is a simple web application which allows the user to select, draw and annotate building
 plans.
