@@ -13,10 +13,10 @@ const createElement = (id, x1, y1, x2, y2, type) => {
           ? generator.line(x1, y1, x2, y2)
           : generator.rectangle(x1, y1, x2 - x1, y2 - y1);
       return { id, x1, y1, x2, y2, type, roughElement };
-      case "circle":
-        const radius = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        const circle = generator.circle(x1, y1, radius, { roughness: 2 });
-        return { id, x1, y1, x2, y2, type, roughElement: circle };
+      // case "circle":
+      //   const radius = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+      //   const circle = generator.circle(x1, y1, radius, { roughness: 2 });
+      //   return { id, x1, y1, x2, y2, type, roughElement: circle };
     case "pencil":
       return { id, type, points: [{ x: x1, y: y1 }] };
     case "text":
@@ -469,8 +469,8 @@ const App = () => {
         <label htmlFor="pencil">Pencil</label>
         <input type="radio" id="text" checked={tool === "text"} onChange={() => setTool("text")} />
         <label htmlFor="text">Text</label>
-        <input type="radio" id="circle" checked={tool === "circle"} onChange={() => setTool("circle")} />
-        <label htmlFor="circle">Circle</label>
+        {/* <input type="radio" id="circle" checked={tool === "circle"} onChange={() => setTool("circle")} />
+        <label htmlFor="circle">Circle</label> */}
 
       </div>
       <div style={{ position: "fixed", zIndex: 2, bottom: 10, padding: 10 }}>
